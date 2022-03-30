@@ -52,7 +52,11 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => import('./page/e404/e404.module').then( m => m.E404PageModule)
+  },  {
+    path: 'view',
+    loadChildren: () => import('./page/view/view.module').then( m => m.ViewPageModule)
   }
+
 ];
 
 @NgModule({
